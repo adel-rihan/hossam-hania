@@ -893,9 +893,9 @@ $(document).ready(function() {
 		}, 1000);
 
 		var music = document.getElementById("music");
+		music.load();
 		music.autoplay = true;
 		music.loop = true;
-		music.load();
 
 	// Document on load.
 
