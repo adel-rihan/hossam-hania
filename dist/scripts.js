@@ -896,7 +896,7 @@ $(document).ready(function() {
 		music.autoplay = true;
 		music.loop = true;
 		music.load();
-		this.voicePlayer.src = 'audio/sugar_maroon_5.mp3';
+		music.voicePlayer.src = 'audio/sugar_maroon_5.mp3';
 
 	// Document on load.
 
