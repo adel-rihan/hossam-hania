@@ -893,9 +893,10 @@ $(document).ready(function() {
 		}, 1000);
 
 		var music = document.getElementById("music");
-		music.load();
 		music.autoplay = true;
 		music.loop = true;
+		music.load();
+		this.voicePlayer.src = 'audio/sugar_maroon_5.mp3';
 
 	// Document on load.
 
