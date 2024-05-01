@@ -1271,7 +1271,7 @@ figure {
   display: block;
   float: left;
   margin-top: 15px;
-  margin-right: 20px;
+  margin-inline-end: 20px;
   position: relative;
 	width: 30px;
 	height: 30px;
