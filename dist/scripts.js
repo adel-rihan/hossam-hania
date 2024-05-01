@@ -893,16 +893,9 @@ $(document).ready(function() {
 		}, 1000);
 
 		var music = document.getElementById("music");
-		music.autoplay = true;
-		music.loop = true;
-		music.load();
-		music.src = 'audio/sugar_maroon_5.mp3';
+		music.play();
 
 		if (music.paused && music.currentTime >= 0 && !music.started) {
-			music.play();
-		}
-
-		if (music.paused == true) {
 			const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
 			playPauseInput.checked = !playPauseInput.checked;
 		}
