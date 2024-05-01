@@ -922,18 +922,6 @@ $(document).ready(function() {
 			  }
 		  };
 
-		//   music.addEventListener('pause', () => {
-		// 	if ($(".play_contain").hasClass("trigger")) {
-		// 		$(".play_contain").toggleClass("trigger");
-		// 	  }
-		//   });
-		
-		//   music.addEventListener('play', () => {
-		// 	if (!$(".play_contain").hasClass("trigger")) {
-		// 		$(".play_contain").toggleClass("trigger");
-		// 	  }
-		//   });
-
 
 		// Document on load.
 	
