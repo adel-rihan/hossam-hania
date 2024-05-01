@@ -892,22 +892,22 @@ $(document).ready(function() {
 		}
 		}, 1000);
 
-		// var music = document.getElementById("music");
-		// music.play();
+		var music = document.getElementById("music");
+		music.play();
 
-		// if (music.paused && music.currentTime >= 0 && !music.started) {
-		// 	const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
-		// 	playPauseInput.checked = !playPauseInput.checked;
-		// }
+		if (music.paused && music.currentTime >= 0 && !music.started) {
+			const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
+			playPauseInput.checked = !playPauseInput.checked;
+		}
 
-		// const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
-		// playPauseInput.addEventListener('change', (e) => {
-		// 	if (e.target.checked) {
-		// 	  music.pause();
-		// 	} else {
-		// 	  music.play();
-		// 	}
-		//   });
+		const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
+		playPauseInput.addEventListener('change', (e) => {
+			if (e.target.checked) {
+			  music.pause();
+			} else {
+			  music.play();
+			}
+		  });
 
 
 		// Document on load.
