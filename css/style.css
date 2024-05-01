@@ -1433,8 +1433,8 @@ img.img-heart {
 }
 
 
-/* Image Heart */
-img.img-rec {
+/* Image Round */
+img.img-round {
   width: 400px;
   aspect-ratio: 1;
   object-fit: cover;
