@@ -915,7 +915,7 @@ $(document).ready(function() {
 			$(".play_contain").toggleClass("trigger");
 		}
 
-		$(".play_btn").click(function(){
+		$(".play_contain").click(function(){
 			$(".play_contain").toggleClass("trigger");
 
 			if ($(".play_contain").hasClass("trigger")) {

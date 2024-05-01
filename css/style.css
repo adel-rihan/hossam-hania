@@ -1266,25 +1266,25 @@ figure {
 
 
  /* Play/Pause */
- .play_contain {
-  display: flex;
+.play_contain {
+  background-color: #fff;
+  display: block;
   float: left;
   margin-top: 15px;
-  margin-inline-start: auto;
+  margin-inline-start: 20px;
   margin-inline-end: auto;
   position: relative;
 	width: 30px;
 	height: 30px;
+	cursor: pointer;
 
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 }
 
 .play_btn {
-	background-color: transparent;
 	width: 30px;
 	height: 30px;
-	cursor: pointer;
 
 	-o-transition:.25s;
 	-ms-transition:.25s;
