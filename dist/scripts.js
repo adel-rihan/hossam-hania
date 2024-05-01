@@ -910,17 +910,29 @@ $(document).ready(function() {
 			  }
 		  });
 
-		  music.addEventListener('pause', () => {
+		  music.onpause = function() {
 			if ($(".play_contain").hasClass("trigger")) {
 				$(".play_contain").toggleClass("trigger");
 			  }
-		  });
+		  };
 		
-		  music.addEventListener('play', () => {
+		  music.onplay = function() {
 			if (!$(".play_contain").hasClass("trigger")) {
 				$(".play_contain").toggleClass("trigger");
 			  }
-		  });
+		  };
+
+		//   music.addEventListener('pause', () => {
+		// 	if ($(".play_contain").hasClass("trigger")) {
+		// 		$(".play_contain").toggleClass("trigger");
+		// 	  }
+		//   });
+		
+		//   music.addEventListener('play', () => {
+		// 	if (!$(".play_contain").hasClass("trigger")) {
+		// 		$(".play_contain").toggleClass("trigger");
+		// 	  }
+		//   });
 
 
 		// Document on load.
