@@ -1269,7 +1269,7 @@ figure {
  .play_contain {
   display: flex;
   float: left;
-  margin-top: 50px;
+  margin-top: 15px;
   margin-inline-end: auto;
   position: relative;
 	width: 30px;
