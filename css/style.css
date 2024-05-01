@@ -1267,9 +1267,9 @@ figure {
 
  /* Play/Pause */
  .play_contain {
-  display: flex;
+  display:block;
   float: left;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   position: relative;
 	width: 30px;
 	height: 30px;
