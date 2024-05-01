@@ -896,18 +896,37 @@ $(document).ready(function() {
 		music.play();
 
 		if (music.paused && music.currentTime >= 0 && !music.started) {
-			const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
-			playPauseInput.checked = !playPauseInput.checked;
+			const playButton = document.querySelector('.play-button input[type="checkbox"]');
+			playButton.checked = !playButton.checked;
 		}
 
-		const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
-		playPauseInput.addEventListener('change', (e) => {
-			if (e.target.checked) {
-			  music.pause();
-			} else {
-			  music.play();
+		  const playButton = document.querySelector('.play-button');
+		  playButton.addEventListener('click', (event) => {
+			if (event.target.tagName === 'INPUT' && event.target.type === 'checkbox') {
+			  if (event.target.checked) {
+				music.pause();
+			  } else {
+				music.play();
+			  }
 			}
 		  });
+
+
+
+		// if (music.paused && music.currentTime >= 0 && !music.started) {
+		// 	const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
+		// 	playPauseInput.checked = !playPauseInput.checked;
+		// }
+
+		// const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
+		// playPauseInput.addEventListener('change', (e) => {
+		// 	if (e.target.checked) {
+		// 	  music.pause();
+		// 	} else {
+		// 	  music.play();
+		// 	}
+		//   });
+
 
 
 		// Document on load.
