@@ -145,19 +145,19 @@ figure {
   }
 }
 
-.fh5co-cover,
+/* .fh5co-cover,
 .fh5co-hero {
   position: relative;
   height: 800px;
   width: 100%;
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .fh5co-cover,
   .fh5co-hero {
     height: 700px;
   }
-}
+} */
 
 .fh5co-overlay {
   position: absolute !important;
@@ -170,27 +170,27 @@ figure {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.fh5co-cover {
+/* .fh5co-cover {
   background-size: cover;
   position: relative;
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: inherit;
     padding: 3em 0;
   }
-}
+} */
 
-.fh5co-cover .display-t {
+/* .fh5co-cover .display-t {
   display: table;
   height: 800px;
   width: 100%;
   position: relative;
   z-index: 2;
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .fh5co-cover .display-t {
     height: 600px;
   }
@@ -233,7 +233,7 @@ figure {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   padding: 5px 0px;
-}
+} */
 
 /* Superfish Override Menu */
 .sf-menu {
@@ -959,34 +959,34 @@ figure {
   position: relative;
 }
 
-/* .fh5co-offcanvas {
+.fh5co-offcanvas {
   overflow: hidden;
 }
 
 .fh5co-offcanvas #fh5co-wrapper {
   overflow: hidden !important;
-} */
+}
 
-/* #fh5co-page {
+#fh5co-page {
   position: relative;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-} */
+}
 
-/* .fh5co-offcanvas #fh5co-page {
+.fh5co-offcanvas #fh5co-page {
   -moz-transform: translateX(-240px);
   -webkit-transform: translateX(-240px);
   -ms-transform: translateX(-240px);
   -o-transform: translateX(-240px);
   transform: translateX(-240px);
-} */
+}
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #fh5co-menu-wrap {
     display: none;
   }
-} */
+}
 
 #offcanvas-menu {
   position: fixed;
