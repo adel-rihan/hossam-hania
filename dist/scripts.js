@@ -912,14 +912,14 @@ $(document).ready(function() {
 
 		// Document on load.
 	
-		// $(function(){
-		// 	mainMenu();
-		// 	parallax();
-		// 	offcanvas();
-		// 	mobileMenuOutsideClick();
-		// 	contentWayPoint();
-		// 	stickyBanner();
-		// });
+		$(function(){
+			mainMenu();
+			parallax();
+			offcanvas();
+			mobileMenuOutsideClick();
+			contentWayPoint();
+			stickyBanner();
+		});
 }());
 
 
