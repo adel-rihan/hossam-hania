@@ -898,31 +898,14 @@ $(document).ready(function() {
 		music.load();
 		music.src = 'audio/sugar_maroon_5.mp3';
 
-
-
 		if (music.paused && music.currentTime >= 0 && !music.started) {
 			music.play();
 		}
 
-		// if (music.paused == true) {
-		// 	const buttons = Array.from(this.children);
-		// 	buttons.forEach(button => button.classList.toggle('hidden'))
-		// }
-	
-		// const player = document.querySelector('.fake-player');
-		// function clickHandler () {
-		// 	const buttons = Array.from(this.children);
-		// 	buttons.forEach(button => button.classList.toggle('hidden'))
-			
-		// 	if (music.paused && music.currentTime >= 0 && !music.started) {
-		// 		music.play();
-		// 	} else {
-		// 		music.pause();
-		// 	}
-		// };
-		// player.addEventListener('click', clickHandler);
-
-		
+		if (music.paused == true) {
+			const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
+			playPauseInput.checked = !playPauseInput.checked;
+		}
 
 		const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
 		playPauseInput.addEventListener('change', (e) => {
