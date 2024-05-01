@@ -149,7 +149,7 @@ figure {
 .fh5co-hero {
   position: relative;
   height: 800px;
-  /* width: 100%; */
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -185,7 +185,7 @@ figure {
 .fh5co-cover .display-t {
   display: table;
   height: 800px;
-  /* width: 100%; */
+  width: 100%;
   position: relative;
   z-index: 2;
 }
