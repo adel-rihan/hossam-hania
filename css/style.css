@@ -1282,8 +1282,8 @@ figure {
 
 .play_btn {
 	background-color: transparent;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
 
 	-o-transition:.25s;
