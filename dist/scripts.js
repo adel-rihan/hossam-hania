@@ -900,13 +900,25 @@ $(document).ready(function() {
 		}
 
 		$(".play_contain").click(function(){
-			$(".play_contain").toggleClass("trigger");
+			// $(".play_contain").toggleClass("trigger");
 			document.querySelector(".arrow_play").style.visibility = "collapse";
 
-			if ($(".play_contain").hasClass("trigger")) {
+			if (!$(".play_contain").hasClass("trigger")) {
 				music.play();
 			  } else {
 				music.pause();
+			  }
+		  });
+
+		  music.addEventListener('pause', () => {
+			if ($(".play_contain").hasClass("trigger")) {
+				$(".play_contain").toggleClass("trigger");
+			  }
+		  });
+		
+		  music.addEventListener('play', () => {
+			if (!$(".play_contain").hasClass("trigger")) {
+				$(".play_contain").toggleClass("trigger");
 			  }
 		  });
 
