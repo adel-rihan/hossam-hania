@@ -903,10 +903,8 @@ $(document).ready(function() {
 		const playPauseInput = document.querySelector('.playpause input[type=checkbox]');
 		playPauseInput.addEventListener('change', (e) => {
 			if (e.target.checked) {
-			  console.log('Play');
 			  music.pause();
 			} else {
-			  console.log('Pause');
 			  music.play();
 			}
 		  });
