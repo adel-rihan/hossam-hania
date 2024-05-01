@@ -895,22 +895,35 @@ $(document).ready(function() {
 		var music = document.getElementById("music");
 		music.play();
 
+		// if (music.paused && music.currentTime >= 0 && !music.started) {
+		// 	const playButton = document.querySelector('.play-button input[type="checkbox"]');
+		// 	playButton.checked = !playButton.checked;
+		// }
+
+		//   const playButton = document.querySelector('.play-button');
+		//   playButton.addEventListener('click', (event) => {
+		// 	if (event.target.tagName === 'INPUT' && event.target.type === 'checkbox') {
+		// 	  if (event.target.checked) {
+		// 		music.pause();
+		// 	  } else {
+		// 		music.play();
+		// 	  }
+		// 	}
+		//   });
+
 		if (music.paused && music.currentTime >= 0 && !music.started) {
-			const playButton = document.querySelector('.play-button input[type="checkbox"]');
-			playButton.checked = !playButton.checked;
+			$(".play_contain").toggleClass("trigger");
 		}
 
-		  const playButton = document.querySelector('.play-button');
-		  playButton.addEventListener('click', (event) => {
-			if (event.target.tagName === 'INPUT' && event.target.type === 'checkbox') {
-			  if (event.target.checked) {
-				music.pause();
-			  } else {
-				music.play();
-			  }
-			}
-		  });
+		$(".play_btn").click(function(){
+			$(".play_contain").toggleClass("trigger");
 
+			if ($(".play_contain").hasClass("trigger")) {
+				music.play();
+			  } else {
+				music.pause();
+			  }
+		  });
 
 
 		// if (music.paused && music.currentTime >= 0 && !music.started) {
