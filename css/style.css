@@ -1431,3 +1431,12 @@ img.img-heart {
            mask: var(--_m);
   }
 }
+
+
+/* Image Heart */
+img.img-rec {
+  width: 400px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 5 !important;
+}
