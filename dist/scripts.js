@@ -871,8 +871,8 @@ $(document).ready(function() {
 		if (distance < 0) {
 			clearInterval(x);
 			document.getElementById("demo").innerHTML = "The Wedding Ceremony is Over";
-			document.getElementById("countdown_still").style.display = "flex";
-			document.getElementById("countdown_finished").style.display = "block";
+			document.getElementById("countdown_still").style.display = "none";
+			document.getElementById("countdown_finished").style.display = "";
 		} else {
 			// Time calculations for days, hours, minutes and seconds
 			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
