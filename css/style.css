@@ -149,7 +149,6 @@ figure {
 .fh5co-hero {
   position: relative;
   height: 800px;
-  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
